@@ -1,0 +1,596 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+.wrapper {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.booking-popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.booking-popup__item {
+  background-color: #fff;
+  -webkit-box-shadow: 1px 5px 5.5px 2px rgba(222, 218, 218, 0.2509803922);
+          box-shadow: 1px 5px 5.5px 2px rgba(222, 218, 218, 0.2509803922);
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 1200px;
+  width: 100%;
+  position: relative;
+  padding: 100px;
+  padding-bottom: 250px;
+  overflow: hidden;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+.booking-popup__item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40%;
+  height: 400px;
+  background-image: url(../../assets/image.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  border-radius: 0 50px 0 0;
+}
+.booking-popup__item .col .pp-text p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #404040;
+  margin: 0;
+}
+.booking-popup__item .col .pp-text p a {
+  color: #FD6837;
+  text-decoration: none;
+}
+.booking-popup__item .col .pp-text p a:over {
+  text-decoration: underline;
+}
+.booking-popup__item .col:first-child {
+  width: 100%;
+  max-width: 390px;
+}
+.booking-popup__item .col:first-child h2 {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 30px;
+  color: #2B87DB;
+  margin: 0;
+  margin-bottom: 15px;
+}
+.booking-popup__item .col:first-child h3 {
+  color: #333;
+  margin: 0;
+  line-height: 1;
+  font-size: 24px;
+  display: block;
+  margin-bottom: 30px;
+}
+.booking-popup__item .col:first-child .call span {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 18px;
+  color: #808080;
+  display: block;
+  margin-bottom: 15px;
+}
+.booking-popup__item .col:first-child .call a {
+  font-weight: 500;
+  color: #FD6837;
+  font-family: "Inter", sans-serif;
+  font-size: 28px;
+  position: relative;
+  text-decoration: none;
+}
+.booking-popup__item .col:first-child .call a::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: repeating-linear-gradient(90deg, #FD6837 0px, #FD6837 4px, transparent 4px, transparent 8px);
+}
+.booking-popup__item .col:first-child .actions span {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 18px;
+  color: #808080;
+  display: block;
+  margin-bottom: 15px;
+}
+.booking-popup__item .col:first-child .actions__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  gap: 15px;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  margin-bottom: 30px;
+}
+.booking-popup__item .col:first-child .actions__links a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  background-color: #2B87DB;
+  padding: 14px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+.booking-popup__item .col:first-child .actions__links a:first-child {
+  background-color: #3EDD7A;
+}
+.booking-popup__item .col:first-child .actions__links a:last-child {
+  background-color: #59B4F5;
+}
+.booking-popup__item .col:first-child .actions__links a svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+.booking-popup__item .col:last-child {
+  width: 100%;
+  max-width: 490px;
+}
+.booking-popup__item .col:last-child .booking-form {
+  background-color: #F2F4F5;
+  padding: 30px 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.booking-popup__item .col:last-child .booking-form .form-wrap {
+  display: none;
+}
+.booking-popup__item .col:last-child .booking-form .form-wrap.active {
+  display: block;
+}
+.booking-popup__item .col:last-child .booking-form .form-wrap p {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  color: #404040;
+  display: block;
+  margin: 0;
+  margin-bottom: 25px;
+}
+.booking-popup__item .col:last-child .booking-form .form-wrap label {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 24px;
+  display: block;
+}
+.booking-popup__item .col:last-child .booking-form .form-wrap label.focus .input-placeholder {
+  top: -22px;
+  padding: 2px;
+  left: 5px;
+}
+.booking-popup__item .col:last-child .booking-form .form-wrap label .input-placeholder {
+  position: absolute;
+  left: 14px;
+  top: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #808080;
+  -webkit-transition: 0.35s ease;
+  transition: 0.35s ease;
+}
+.booking-popup__item .col:last-child .booking-form .form-wrap label .input-placeholder i {
+  color: #FD6837;
+}
+.booking-popup__item .col:last-child .booking-form .form-wrap label input {
+  display: block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 14px 20px;
+  border: none;
+  background-color: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  font-size: 16px;
+  font-weight: 400;
+}
+.booking-popup__item .col:last-child .booking-form .form-wrap .form-info {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  color: #404040;
+}
+.booking-popup__item .col:last-child .booking-form .form-wrap .form-info span {
+  color: #FD6837;
+}
+.booking-popup__item .col:last-child .booking-form .form-wrap .actions-info {
+  margin: 25px 0;
+}
+.booking-popup__item .col:last-child .booking-form .form-wrap .actions-info p {
+  margin: 0;
+  color: #404040;
+  font-size: 16px;
+  font-weight: 600;
+  display: block;
+}
+.booking-popup__item .col:last-child .booking-form .form-wrap .actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+.booking-popup__item .col:last-child .booking-form .form-wrap .actions button {
+  cursor: pointer;
+  width: 50%;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  padding: 15px;
+  border-radius: 4px;
+}
+.booking-popup__item .col:last-child .booking-form .form-wrap .actions button:first-child {
+  color: #FD6837;
+  background-color: #fff;
+  border: 1px solid #FD6837;
+}
+.booking-popup__item .col:last-child .booking-form .form-wrap .actions button:last-child {
+  color: #fff;
+  background-color: #2B87DB;
+  border: 1px solid #2B87DB;
+}
