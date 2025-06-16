@@ -15,6 +15,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: .35s ease;
+    height: fit-content;
     // .booking-popup__item
 
     &__item {
@@ -27,7 +29,9 @@
         width: 100%;
         position: relative;
         padding: 100px;
-        padding-bottom: 250px;
+        padding-bottom: 40px;
+        min-height: 920px;
+        height: fit-content;
         overflow: hidden;
         justify-content: space-between;
         gap: 20px;
@@ -56,6 +60,7 @@
                     line-height: 1.2;
                     color: #404040;
                     margin: 0;
+
                     a {
                         color: #FD6837;
                         text-decoration: none;
@@ -188,6 +193,32 @@
                     box-sizing: border-box;
 
                     .form-wrap {
+                        .go-back-form {
+                            box-sizing: border-box;
+                            padding: 0;
+                            color: #FD6837;
+                            cursor: pointer;
+                            border: none;
+                            display: block;
+                            width: fit-content;
+                            margin-bottom: 10px;
+                            display: flex;
+                            align-items: center;
+                            padding-right: 10px;
+                            svg{
+                                display: block;
+                                margin-right: 5px;
+                            }
+                        }
+                        &.form-wrap-2 {
+                            .actions {
+                                margin-top: 24px;
+                                button {
+                                    width: 100%;
+                                    box-sizing: border-box;
+                                }
+                            }
+                        }
                         display: none;
 
                         &.active {
@@ -212,6 +243,13 @@
                             display: block;
 
                             &.focus {
+                                .input-placeholder {
+                                    top: -22px;
+                                    padding: 2px;
+                                    left: 5px;
+                                }
+                            }
+                            &.active {
                                 .input-placeholder {
                                     top: -22px;
                                     padding: 2px;
@@ -244,6 +282,24 @@
                                 overflow: hidden;
                                 font-size: 16px;
                                 font-weight: 400;
+                                &[type=date]{
+                                    
+                                }
+                            }
+
+                            textarea {
+                                display: block;
+                                width: 100%;
+                                box-sizing: border-box;
+                                padding: 14px 20px;
+                                border: none;
+                                background-color: #fff;
+                                border-radius: 4px;
+                                overflow: hidden;
+                                font-size: 16px;
+                                font-weight: 400;
+                                height: 160px;
+                                resize: none;
                             }
                         }
 
@@ -277,6 +333,7 @@
                             align-items: stretch;
                             gap: 10px;
                             margin-bottom: 24px;
+
                             button {
                                 cursor: pointer;
                                 width: 50%;

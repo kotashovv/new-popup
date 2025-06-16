@@ -334,6 +334,11 @@ template {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: 0.35s ease;
+  transition: 0.35s ease;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .booking-popup__item {
   background-color: #fff;
@@ -349,7 +354,11 @@ template {
   width: 100%;
   position: relative;
   padding: 100px;
-  padding-bottom: 250px;
+  padding-bottom: 40px;
+  min-height: 920px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   overflow: hidden;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -494,6 +503,38 @@ template {
 .booking-popup__item .col:last-child .booking-form .form-wrap {
   display: none;
 }
+.booking-popup__item .col:last-child .booking-form .form-wrap .go-back-form {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  color: #FD6837;
+  cursor: pointer;
+  border: none;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 10px;
+}
+.booking-popup__item .col:last-child .booking-form .form-wrap .go-back-form svg {
+  display: block;
+  margin-right: 5px;
+}
+.booking-popup__item .col:last-child .booking-form .form-wrap.form-wrap-2 .actions {
+  margin-top: 24px;
+}
+.booking-popup__item .col:last-child .booking-form .form-wrap.form-wrap-2 .actions button {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 .booking-popup__item .col:last-child .booking-form .form-wrap.active {
   display: block;
 }
@@ -515,6 +556,11 @@ template {
   display: block;
 }
 .booking-popup__item .col:last-child .booking-form .form-wrap label.focus .input-placeholder {
+  top: -22px;
+  padding: 2px;
+  left: 5px;
+}
+.booking-popup__item .col:last-child .booking-form .form-wrap label.active .input-placeholder {
   top: -22px;
   padding: 2px;
   left: 5px;
@@ -544,6 +590,21 @@ template {
   overflow: hidden;
   font-size: 16px;
   font-weight: 400;
+}
+.booking-popup__item .col:last-child .booking-form .form-wrap label textarea {
+  display: block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 14px 20px;
+  border: none;
+  background-color: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  font-size: 16px;
+  font-weight: 400;
+  height: 160px;
+  resize: none;
 }
 .booking-popup__item .col:last-child .booking-form .form-wrap .form-info {
   font-family: Inter;
